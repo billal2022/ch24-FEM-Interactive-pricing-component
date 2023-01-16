@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Simple, traffic-based pricing</h1>
+<p>Sign-up for our 30-day trial. No credit card required.</p>
+</header>
+  <div class="main-box">
+    <div class="header">
+      <div class="left"> <span><span class="value-one">100k</span>Pageviews</span></div>
+      <div class="right"><span>$<span class="value-two">16.00</span>/month</span></div>
+    </div>
+    <div>
+      <input type="range" class="sliderr"  min="0" max="100" id="myRange" step="25" value="50">
+    </div>
+    <div class="toggler-box">
+<span class="monthly">Monthly Billing</span>
+<label class="switch">
+  <input type="checkbox" id="checkboxo">
+  <span class="slider round"></span>
+</label>
+<span> Yearly Billing</span>
+<span class="yearly">25% discount</span>
+    </div>
+    <div class="line"></div>
+    <div class="bottom">
+      <div class="checked-pes">
+        <p><img src="images/icon-check.svg" alt=""><span>Unlimited websites</span></p>
+        <p><img src="images/icon-check.svg" alt=""><span>100% data ownership</span></p>
+        <p><img src="images/icon-check.svg" alt=""><span>Email reports</span></p>
+      </div>
+      <button> Start my trial</button>
+    </div>
+  </div>
+   
+
+  
+ <script src="jaavs.js"></script>
+</body>
+</html>

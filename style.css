@@ -1,0 +1,176 @@
+:root{
+    --Soft-Cyan-Full-Slider-Bar: hsl(174, 77%, 80%);
+    --StrongCyan-Slider-Backroun: hsl(174, 86%, 45%);
+    --Light-GrayishRed-Discount-Background: hsl(14, 92%, 95%);
+    --Light-Red-Discount-Text: hsl(15, 100%, 70%);
+    --Pale-Blue-CTA-Text: hsl(226, 100%, 87%);
+    --White-Pricing-Component-Background: hsl (0, 0%, 100%);
+    --Very-Pale-BlueMain-Background: hsl(230, 100%, 99%);
+    --Light-Grayish-Blue-Empty-Slider-Bar: hsl(224, 65%, 95%);
+    --Light-Grayish-Blue-Toggle-Background: hsl(223, 50%, 87%);
+    --Grayish-blue-Text: hsl(225, 20%, 60%);
+    --Dark-Desaturated-Blue-Text-CTA-Background: hsl(227, 35%, 25%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-image: url(images/bg-pattern.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-items: center;
+    place-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+header{
+    background-image: url(images/pattern-circles.svg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 150px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+header p{
+color: var(--Grayish-blue-Text);
+text-shadow: 0px 1px 20px #0000003b;
+}
+header h1{
+   
+    text-shadow: 0px 1px 20px #0000003b;
+
+}
+/**toggler**/
+.slider.round {
+    border-radius: 34px;
+  }  
+  .slider.round:before {
+  
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Light-Grayish-Blue-Empty-Slider-Bar);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 7px;
+    bottom: 7px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: var(--StrongCyan-Slider-Backroun);
+  } 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /*******/
+  .yearly{
+    background-color: var(--Light-GrayishRed-Discount-Background);
+    padding: 2px 9px;
+    border-radius: 18px;
+    color: var(--Light-Red-Discount-Text);
+}
+.main-box{
+    display: grid;
+    gap: 50px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 26px 0px rgb(0 0 0 / 15%);
+    
+    width: 600px;
+
+}
+.toggler-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--Grayish-blue-Text);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--Grayish-blue-Text);
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom span{
+    margin-left: 10px;
+    color: var(--Grayish-blue-Text);
+}
+.bottom button{
+    border: 0;
+    background-color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
+    color:var(--Pale-Blue-CTA-Text);
+    width: 170px;
+    height: 40px;
+    border-radius: 99999999px;
+    cursor: pointer;
+}
+.sliderr {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 30px;
+  background: var(--Soft-Cyan-Full-Slider-Bar);
+}
+.sliderr::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: var(--StrongCyan-Slider-Backroun);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 10px 30px 0px var(--StrongCyan-Slider-Backroun);
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sliderr::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #04AA6D;
+  cursor: pointer;
+}
